@@ -1,0 +1,176 @@
+
+
+@font-face {
+    font-family: "Matteo";
+    src: url("../fonts/Indian Type Foundry - Matteo*");
+    src: url("../fonts/Indian Type Foundry - Matteo.otf") format("opentype");
+}
+
+body {
+    font-family: "Matteo";
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:disabled {
+    text-decoration: none;
+    color: #00d0c4;
+}
+
+.primary-background {
+    background-color: #00d0be;
+    color: #fff;
+}
+
+.secondary-background {
+    background-color: #e0faf8;
+    color: #00332a;
+}
+
+.vh-full{
+    min-height: 100vh;
+}
+
+.container-mild {
+    padding-right: 125px;
+    padding-left: 125px;
+}
+
+.input-group-text.btn-danger,
+.btn.btn-danger {
+    background-color: #d00012;
+    border: 1px solid #d00012;
+    color: #fff;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-6 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.p-6 {
+    padding: 5rem !important;
+}
+
+.pt-6,
+.py-6 {
+    padding-top: 5rem !important;
+}
+
+.pr-6,
+.px-6 {
+    padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+    padding-bottom: 5rem !important;
+}
+
+.pl-6,
+.px-6 {
+    padding-left: 5rem !important;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #00d0c4;
+    border-color: #00d0c4;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #00d0c4;
+    border-color: #00d0c4;
+}
+  
+.btn-outline-success {
+    color: #00d0c4;
+    border-color: #00d0c4;
+}
+
+
+.text-vly-primary {
+    color: #336666 !important;
+}
+
+.text-vly-secondary {
+    color: #ffff00 !important;
+}
+
+.btn-outline-success-vly {
+    border-color: #fff;
+}
+  
+
+
+
+.hm .intro .input-group > .form-control {
+    padding: 25px 35px;
+    font-size: 1.2rem;
+    color: #04b1a4;
+    background-color: #e0faf8;
+    border-color: #70ded5;
+}
+
+.hm .intro .input-group > .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #00d0c1;
+    opacity: 1; /* Firefox */
+}
+
+.hm .intro .input-group > .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #00d0c1;
+}
+
+.hm .intro .input-group > .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #00d0c1;
+}
+
+.hm .vly-card {
+    padding: 3.5em 1.8rem;
+    border-radius: 1.5rem;
+    border-color: #fff;
+    min-height: 512px;
+}
+
+.hm .vly-card.active {
+    padding: 3.5em 2rem;
+    border-radius: 1.5rem;
+    border-color: #fff;
+    min-height: 612px;
+    margin-top: -50px;
+}
+
+.hm .vly-card .card-title {
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+}
+
+.hm .vly-card .card-text {
+    color: #336666;
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
+}
+
+.hm .list-group-item {
+    border: transparent;
+}
+
+.hm .list-group-item:hover {
+    background-color: transparent;
+}
+
+.hm .list-group-item .title {
+    font-size: 1.6rem;
+}
