@@ -3,6 +3,22 @@
         <title>Vendly</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/animate.css" />
+        <script type="text/javascript" src="./assets/js/jquery.js"></script>
+        <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+
+        <!-- <link rel="stylesheet" href="./assets/css/examples.css" />
+        
+        <script type="text/javascript" src="./assets/js/lib/highlight.pack.js"></script>
+        <script type="text/javascript" src="./assets/js/lib/modernizr.custom.min.js"></script>
+        <script type="text/javascript" src="./assets/js/lib/examples.js"></script>
+
+        <script type="text/javascript" src="./assets/js/lib/greensock/TweenMax.min.js"></script>
+        <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+        <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+
     </head>
     <body class="hm">
         <div class="vh-full primary-background">
@@ -38,23 +54,54 @@
                     <!-- Section: Content -->
                     <div class="col-sm-5">
                         <div class="pt-5 pb-2 display-2">
-                            Empower<br>Your Social.
-                        </div>
+                            <div class="fadeInUp animated">
+                                Empower<br>Your Social. 
+                            </div>
+                        </div>                        
                         <div class="mb-5 display-6">
-                            Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video</a>
+                            <div class="fadeInUp animated">
+                                Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video</a>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-11">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Start here!" aria-label="vend">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-danger px-5" type="button">Vend</button>
+                            <div class="col-sm-11">                                
+                                <div class="fadeInUp animated">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Start here!" aria-label="vend">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-danger px-5" type="button">Vend</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- #End Section: Content -->
+                    
+                        <!-- <div id="trigger2">
+                            <div id="parallaxText" style="position: relative;">
+                                <h1 class="layer1" style="left: 300px; visibility: inherit; opacity: 0.7; transform: matrix(3, 0, 0, 3, 0, 0);">PARALLAX</h1>
+                                <h1 class="layer2" style="left: 150px; visibility: inherit; opacity: 0.3; transform: matrix(2, 0, 0, 2, 0, 0);">PARALLAX</h1>
+                                <h1 class="layer3"> PARALLAX</h1>
+                            </div>
+                        </div>
+    
+                        <script>
+                            var controller = new ScrollMagic.Controller();
+                            // build tween
+                            var tween = new TimelineMax ()
+                                .add([
+                                    TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),
+                                    TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: -175, ease: Linear.easeNone})
+                                ]);
+                        
+                            // build scene
+                            var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $(window).width()})
+                                            .setTween(tween)
+                                            .addIndicators() // add indicators (requires plugin)
+                                            .addTo(controller);
+                        </script> -->
+                        
                 </div>
                 <!-- #End Power -->
             </div>
