@@ -2,13 +2,16 @@
     <head>
         <title>Vendly</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="./assets/css/boostrap-extended.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/animate.css" />
+        <link rel="stylesheet" href="./assets/css/anim.css" />
         <script type="text/javascript" src="./assets/js/jquery.js"></script>
         <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
 
 
-        <!-- <link rel="stylesheet" href="./assets/css/examples.css" />
+        <!-- Animation -->
+        <!-- <link rel="stylesheet" href="./assets/css/examples.css" /> -->
         
         <script type="text/javascript" src="./assets/js/lib/highlight.pack.js"></script>
         <script type="text/javascript" src="./assets/js/lib/modernizr.custom.min.js"></script>
@@ -17,17 +20,20 @@
         <script type="text/javascript" src="./assets/js/lib/greensock/TweenMax.min.js"></script>
         <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
         <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-        <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+        <script type="text/javascript" src="./assets/js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>        
+        <!-- #End Animation -->
 
     </head>
     <body class="hm">
-        <div class="vh-full primary-background">
-            <div class="container-mild">
+        <div  id="scroll-trigger" class="vh-full primary-background" style="position: relative;">
+            <div class="container container-mild">
                 <!-- Navbar -->
                 <div class="row">
                     <div class="col-sm-12">
                         <nav class="navbar navbar-expand-lg navbar-dark mb-3">
-                            <a class="navbar-brand" href="#">Vendly</a>
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/img/brand.png" />
+                            </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -49,67 +55,88 @@
                     </div>
                 </div>
                 <!-- #End Navbar -->
+
                 <!-- Power -->
-                <div class="mt-5 intro" style="position: relative;">
-                    <!-- Section: Content -->
-                    <div class="col-sm-5">
-                        <div class="pt-5 pb-2 display-2">
-                            <div class="fadeInUp animated">
-                                Empower<br>Your Social. 
-                            </div>
-                        </div>                        
-                        <div class="mb-5 display-6">
-                            <div class="fadeInUp animated">
-                                Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-11">                                
+                <div class="mt-5 intro">                    
+                    <div class="row">
+
+                        <!-- Section: Content -->
+                        <div class="col-sm-10 col-lg-5">
+                            <div class="pt-5 pb-2 display-2">
                                 <div class="fadeInUp animated">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Start here!" aria-label="vend">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-danger px-5" type="button">Vend</button>
+                                    Empower<br>Your Social. 
+                                </div>
+                            </div>                        
+                            <div class="mb-5 display-6">
+                                <div class="fadeInUp animated">
+                                    Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-11">   
+                                    <div class="pb-5">                             
+                                        <div class="fadeInUp animated">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Start here!" aria-label="vend">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-danger px-5" type="button">Vend</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- #End Section: Content -->
-                    
-                        <!-- <div id="trigger2">
-                            <div id="parallaxText" style="position: relative;">
-                                <h1 class="layer1" style="left: 300px; visibility: inherit; opacity: 0.7; transform: matrix(3, 0, 0, 3, 0, 0);">PARALLAX</h1>
-                                <h1 class="layer2" style="left: 150px; visibility: inherit; opacity: 0.3; transform: matrix(2, 0, 0, 2, 0, 0);">PARALLAX</h1>
-                                <h1 class="layer3"> PARALLAX</h1>
+                        <!-- #End Section: Content -->
+                        
+                        <!-- Logo Icon -->
+                        <div class="col-sm-0 col-md-2 col-lg-2 offset-lg-5" style="position: relative;">
+                            <div id="animate2" class="pt-5 pb-2x" style="position: absolute; top: 200px; right: 150px; opacity: 0; padding-right: 15px;">
+                                <img src="assets/img/logoicon.png" />
                             </div>
                         </div>
-    
-                        <script>
-                            var controller = new ScrollMagic.Controller();
-                            // build tween
-                            var tween = new TimelineMax ()
-                                .add([
-                                    TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),
-                                    TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: -175, ease: Linear.easeNone})
-                                ]);
-                        
-                            // build scene
-                            var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $(window).width()})
-                                            .setTween(tween)
-                                            .addIndicators() // add indicators (requires plugin)
-                                            .addTo(controller);
-                        </script> -->
+                        <!-- #End Logo Icon -->
+
+                    </div>
                         
                 </div>
                 <!-- #End Power -->
             </div>
+
+            <!-- Power Animation -->
+            <div class="container container-mild">
+                <div class="row">
+
+                    <div style="position: absolute; bottom: -50; right: 80;">
+                        <div style="display: flex; position: relative;">
+                            <img class="animated anim delay-1s" src="assets/img/3.png" style="top: 50px; position: relative;" />
+                            <img class="animated anim delay-1s" src="assets/img/4.png" />
+                            <img class="animated anim delay-1s" src="assets/img/7.png" />
+                            <img class="animated anim delay-1s" src="assets/img/6.png" />
+                            <div id="animate-circle" class="animated delay-1s" style="position: absolute; right: 0; opacity: 0;">
+                                <img src="assets/img/5.png" />
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="parallax-trigger">
+                        <!-- <div id="parallaxText" style="position: relative;">
+                            <h1 class="layer1" style="left: 300px; visibility: inherit; opacity: 0.7; transform: matrix(3, 0, 0, 3, 0, 0);">PARALLAX</h1>
+                            <h1 class="layer2" style="left: 150px; visibility: inherit; opacity: 0.3; transform: matrix(2, 0, 0, 2, 0, 0);">PARALLAX</h1>
+                            <h1 class="layer3"> PARALLAX</h1>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- #End Power Animation -->
+                
         </div>
 
         <!-- Info -->
         <div class="vh-full secondary-background">
-            <div class="container-mild">
+            <div class="container container-mild py-4">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="display-4 py-6 font-weight-bold">
@@ -118,7 +145,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card vly-card mt-3 mr-md-5 mr-sm-0">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">Vend to</h5>
@@ -127,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card vly-card mt-3 active">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">SuperVend</h5>
@@ -136,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card vly-card mt-3 ml-md-5 ml-sm-0">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">VendMe<sup>TM</sup></h5>
@@ -160,7 +187,7 @@
         
         <!-- How it works -->
         <div class="vh-full">
-            <div class="container-mild">
+            <div class="container container-mild">
                 <div class="row">
                     <div>
                         sup.. pic goes here
@@ -225,6 +252,59 @@
             </div>
         </div>
         <!-- #End -How it works -->
+
+        
+        <script>
+            //--- animate power image contents
+            $(document).ready(function(){
+                $(".anim").each(function(index) {
+                    var rand = (Math.floor((Math.random() * 10) + 1) * 5);
+                    $(this).addClass("fadeInUpBig trans"+rand)
+                });
+            });
+
+
+            var controller = new ScrollMagic.Controller();
+
+            // build parallax tween
+            var tween = new TimelineMax ()
+                .add([
+                    TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),
+                    TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: -175, ease: Linear.easeNone})
+                ]);
+        
+            // build parallax scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#parallax-trigger", duration: $(window).width()})
+                            .setTween(tween)
+                            //.addIndicators() // add indicators (requires plugin)
+                            .addTo(controller);
+
+            //--- animate power logo
+            // build tween
+            var tween = new TimelineMax()
+                .to("#animate2", 1, {top: "-=200", opacity: 0.4, delay: 1})
+                .to("#animate2", 1, {right: "-=150", opacity: 1});
+
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#scroll-trigger"})
+                            .setTween(tween)
+                            //.addIndicators({name: "timeline"}) // add indicators (requires plugin)
+                            .addTo(controller);
+                            
+            //--- animate power circle
+            // build tween
+            var tween = new TimelineMax()
+                .to("#animate-circle", 1, {top: "-=300", opacity: 1, delay: 2})
+                .to("#animate-circle", 1, {rotation: 360, ease: Linear.easeNone});
+
+                
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#scroll-trigger"})
+                            .setTween(tween)
+                            //.addIndicators({name: "timeline"}) // add indicators (requires plugin)
+                            .addTo(controller);
+
+            </script>
 
     </body>
 </html>

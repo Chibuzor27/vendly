@@ -1,0 +1,128 @@
+.trans5 {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+}
+
+.trans10 {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.trans15 {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.trans20 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.trans25 {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+}
+
+.trans30 {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.trans35 {
+  -webkit-animation-duration: 1.75s;
+  animation-duration: 1.75s;
+}
+
+.trans40 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.trans45 {
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+}
+
+.trans50 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.trans55 {
+  -webkit-animation-duration: 2.75s;
+  animation-duration: 2.75s;
+}
+
+.trans60 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.trans65 {
+  -webkit-animation-duration: 3.25s;
+  animation-duration: 3.25s;
+}
+
+.trans70 {
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+}
+
+.trans75 {
+  -webkit-animation-duration: 3.75s;
+  animation-duration: 3.75s;
+}
+
+.trans80 {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+.trans85 {
+  -webkit-animation-duration: 4.25s;
+  animation-duration: 4.25s;
+}
+
+.trans90 {
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s;
+}
+
+.trans95 {
+  -webkit-animation-duration: 4.75s;
+  animation-duration: 4.75s;
+}
+
+.trans100 {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes slideInUpRandom {
+  from {
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUpRandom {
+  from {
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUpRandom {
+  -webkit-animation-name: slideInUpRandom;
+  animation-name: slideInUpRandom;
+}
+
+/*# sourceMappingURL=anim.css.map */

@@ -1,0 +1,146 @@
+
+.container-mild {
+    padding-right: 125px;
+    padding-left: 125px;
+}
+
+@media (min-width: 430px){
+.container-mild {
+    padding-right: initial;
+    padding-left: initial;
+}
+.container {
+    max-width: 400px;
+}
+}
+
+@media (min-width: 576px){
+.container-mild {
+    padding-right: 125px;
+    padding-left: 125px;
+}
+.container {
+    max-width: initial;
+}
+}
+
+@media (min-width: 1200px){
+.container-mild {
+    padding-right: 125px;
+    padding-left: 125px;
+    max-width: initial;
+}
+}
+
+.input-group-text.btn-danger,
+.btn.btn-danger {
+    background-color: #d00012;
+    border: 1px solid #d00012;
+    color: #fff;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-6 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.p-6 {
+    padding: 5rem !important;
+}
+
+.pt-6,
+.py-6 {
+    padding-top: 5rem !important;
+}
+
+.pr-6,
+.px-6 {
+    padding-right: 5rem !important;
+}
+
+.pb-6,
+.py-6 {
+    padding-bottom: 5rem !important;
+}
+
+.pl-6,
+.px-6 {
+    padding-left: 5rem !important;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #00d0c4;
+    border-color: #00d0c4;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #00d0c4;
+    border-color: #00d0c4;
+}
+  
+.btn-outline-success {
+    color: #00d0c4;
+    border-color: #00d0c4;
+}
+
+
+.text-vly-primary {
+    color: #336666 !important;
+}
+
+.text-vly-secondary {
+    color: #ffff00 !important;
+}
+
+.btn-outline-success-vly {
+    border-color: #fff;
+}
+
+.btn-outline-success-vly:hover {
+    box-shadow: 1px 1px 5px #44928b;
+    background-color: #33666675;
+}
+
+.btn-outline-success-vly:focus,
+.btn-outline-success-vly:active {
+    box-shadow: 1px 1px 5px #44928b;
+    background-color: #336666;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-collapse.show {
+    background-color: rgba(51, 102, 102, 0.2);
+}
+
+.nav-link:hover {
+    color: #336666 !important;
+}
+
+
+@media (min-width: 430px){
+.col-sm-0,
+.col-md-0,
+.col-lg-0 {
+    opacity: 0;
+}
+}
+
+@media (min-width: 576px){
+.col-sm-0,
+.col-md-0,
+.col-lg-0 {
+    opacity: 1;
+}
+}

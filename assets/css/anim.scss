@@ -1,0 +1,77 @@
+
+// $n: 16; 
+// $m: 8;
+
+// @mixin transform($transform) {
+//     transform: $transform;
+//     -webkit-transform: $transform;
+//     -moz-transform: $transform;
+//     -o-transform: $transform;
+//     -ms-transform: $transform;
+// }
+
+// @keyframes random-animation {
+//   @for $i from 0 through $n {
+//     #{$i * 100% / $n} {
+//       @include transform(
+//         scale(random($n / $m) + 1.5)
+//         rotate(random(360) + deg)
+//         translate(random($n * 3 / $m) + em)
+//       );
+//     }
+//   }
+// }
+
+// .test-animation {
+//     -webkit-animation-name: random-animation;
+//     animation-name: random-animation;
+// }
+
+
+@mixin animation-duration($duration) {
+    -webkit-animation-duration: $duration+s;
+    animation-duration: $duration+s;
+}
+
+$startTime: 0;
+$endTime: 5;
+
+@for $i from 5 through 100 {
+    @if $i % 5 == 0 {
+        #{'.'+trans+$i} {
+            @include animation-duration((($i/100)*$endTime));
+        }
+    }
+}
+
+
+@-webkit-keyframes slideInUpRandom {
+    from {
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes slideInUpRandom {
+    from {
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+.slideInUpRandom {
+    -webkit-animation-name: slideInUpRandom;
+    animation-name: slideInUpRandom;
+}
