@@ -34,7 +34,7 @@
 }
 
 $startTime: 0;
-$endTime: 5;
+$endTime: 3;
 
 @for $i from 5 through 100 {
     @if $i % 5 == 0 {

@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Matteo";
     src: url("../fonts/Indian Type Foundry - Matteo*");
+    src: url("../fonts/Indian Type Foundry - Matteo Semibold.otf") format("opentype");
     src: url("../fonts/Indian Type Foundry - Matteo.otf") format("opentype");
 }
 

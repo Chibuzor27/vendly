@@ -1,101 +1,101 @@
 .trans5 {
-  -webkit-animation-duration: 0.25s;
-  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
 }
 
 .trans10 {
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 .trans15 {
+  -webkit-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+}
+
+.trans20 {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+.trans25 {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
 }
 
-.trans20 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.trans25 {
-  -webkit-animation-duration: 1.25s;
-  animation-duration: 1.25s;
-}
-
 .trans30 {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+}
+
+.trans35 {
+  -webkit-animation-duration: 1.05s;
+  animation-duration: 1.05s;
+}
+
+.trans40 {
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+}
+
+.trans45 {
+  -webkit-animation-duration: 1.35s;
+  animation-duration: 1.35s;
+}
+
+.trans50 {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
 
-.trans35 {
-  -webkit-animation-duration: 1.75s;
-  animation-duration: 1.75s;
+.trans55 {
+  -webkit-animation-duration: 1.65s;
+  animation-duration: 1.65s;
 }
 
-.trans40 {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+.trans60 {
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
 }
 
-.trans45 {
+.trans65 {
+  -webkit-animation-duration: 1.95s;
+  animation-duration: 1.95s;
+}
+
+.trans70 {
+  -webkit-animation-duration: 2.1s;
+  animation-duration: 2.1s;
+}
+
+.trans75 {
   -webkit-animation-duration: 2.25s;
   animation-duration: 2.25s;
 }
 
-.trans50 {
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-}
-
-.trans55 {
-  -webkit-animation-duration: 2.75s;
-  animation-duration: 2.75s;
-}
-
-.trans60 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-}
-
-.trans65 {
-  -webkit-animation-duration: 3.25s;
-  animation-duration: 3.25s;
-}
-
-.trans70 {
-  -webkit-animation-duration: 3.5s;
-  animation-duration: 3.5s;
-}
-
-.trans75 {
-  -webkit-animation-duration: 3.75s;
-  animation-duration: 3.75s;
-}
-
 .trans80 {
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
 }
 
 .trans85 {
-  -webkit-animation-duration: 4.25s;
-  animation-duration: 4.25s;
+  -webkit-animation-duration: 2.55s;
+  animation-duration: 2.55s;
 }
 
 .trans90 {
-  -webkit-animation-duration: 4.5s;
-  animation-duration: 4.5s;
+  -webkit-animation-duration: 2.7s;
+  animation-duration: 2.7s;
 }
 
 .trans95 {
-  -webkit-animation-duration: 4.75s;
-  animation-duration: 4.75s;
+  -webkit-animation-duration: 2.85s;
+  animation-duration: 2.85s;
 }
 
 .trans100 {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes slideInUpRandom {

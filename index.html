@@ -26,11 +26,11 @@
     </head>
     <body class="hm">
         <div  id="scroll-trigger" class="vh-full primary-background" style="position: relative;">
-            <div class="container container-mild">
+            <div class="container container-mild pb-5">
                 <!-- Navbar -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+                        <nav class="navbar navbar-expand-lg navbar-dark mb-5">
                             <a class="navbar-brand" href="#">
                                 <img src="assets/img/brand.png" />
                             </a>
@@ -41,13 +41,13 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item m-3">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link font-weight-bold" href="#">About</a>
                                     </li>
                                     <li class="nav-item m-3">
-                                        <a class="nav-link" href="#">Log In</a>
+                                        <a class="nav-link font-weight-bold" href="#">Log In</a>
                                     </li>
                                     <li class="nav-item m-3">
-                                        <a class="btn btn-outline-success-vly px-5 my-2 my-sm-0 text-vly-secondary" href="#">Sign Up</a>
+                                        <a class="btn btn-outline-success-vly px-5 my-2 text-vly-secondary font-weight-bold" href="#">Sign Up</a>
                                     </li>
                                 </ul>
                             </div>
@@ -58,18 +58,18 @@
 
                 <!-- Power -->
                 <div class="mt-5 intro">                    
-                    <div class="row">
+                    <div class="row pt-5">
 
                         <!-- Section: Content -->
                         <div class="col-sm-10 col-lg-5">
                             <div class="pt-5 pb-2 display-2">
-                                <div class="fadeInUp animated">
+                                <div class="fadeInUp animated font-weight-bold">
                                     Empower<br>Your Social. 
                                 </div>
                             </div>                        
                             <div class="mb-5 display-6">
                                 <div class="fadeInUp animated">
-                                    Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video</a>
+                                    Create, share and request value easily over your social network. <a class="text-vly-secondary" href="#">Watch Video <img src="./assets/img/play.png" /></a>
                                 </div>
                             </div>
                             <div class="row">
@@ -77,7 +77,7 @@
                                     <div class="pb-5">                             
                                         <div class="fadeInUp animated">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Start here!" aria-label="vend">
+                                                <input type="text" class="form-control" placeholder="Amount / Identity" aria-label="vend">
                                                 <div class="input-group-append">
                                                     <button class="btn btn-danger px-5" type="button">Vend</button>
                                                 </div>
@@ -107,13 +107,15 @@
             <div class="container container-mild">
                 <div class="row">
 
-                    <div style="position: absolute; bottom: -50; right: 80;">
-                        <div style="display: flex; position: relative;">
-                            <img class="animated anim delay-1s" src="assets/img/3.png" style="top: 50px; position: relative;" />
-                            <img class="animated anim delay-1s" src="assets/img/4.png" />
-                            <img class="animated anim delay-1s" src="assets/img/7.png" />
+                    <div style="position: absolute; bottom: -140; right: 80;">
+                        <div style="display: inline-table; position: relative;">
+                            <img class="animated anim delay-1s col-sm-0" src="assets/img/3.png" style="top: 150px; position: relative;" />
+                            <img class="animated anim delay-1s" src="assets/img/4.png" style="margin-top: -80px;"/>
                             <img class="animated anim delay-1s" src="assets/img/6.png" />
-                            <div id="animate-circle" class="animated delay-1s" style="position: absolute; right: 0; opacity: 0;">
+                            <img class="animated anim delay-1s" src="assets/img/7.png" />
+                            <img class="animated anim delay-1s" src="assets/img/8.png" style="margin-top: -80px;" />
+                            <img class="animated anim delay-1s" src="assets/img/9.png" style="    margin-top: -110px;" />
+                            <div id="animate-circle" class="animated delay-1s" style="position: absolute; right: -50px; opacity: 0">
                                 <img src="assets/img/5.png" />
                             </div>
                         </div>
@@ -135,8 +137,8 @@
         </div>
 
         <!-- Info -->
-        <div class="vh-full secondary-background">
-            <div class="container container-mild py-4">
+        <div class="vh-full secondary-background pt-6">
+            <div class="container container-mild py-6">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="display-4 py-6 font-weight-bold">
@@ -294,7 +296,7 @@
             //--- animate power circle
             // build tween
             var tween = new TimelineMax()
-                .to("#animate-circle", 1, {top: "-=300", opacity: 1, delay: 2})
+                .to("#animate-circle", 1, {top: "-=450", opacity: 1, delay: 2})
                 .to("#animate-circle", 1, {rotation: 360, ease: Linear.easeNone});
 
                 

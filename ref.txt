@@ -1,0 +1,15 @@
+.papinoy.wrap .anim {
+    width: 63px;
+    height: 51px;
+    background-image: url(images/illustrations/papinoy.png);
+    -webkit-animation: papinoy 1.2s steps(30) infinite;
+    animation: papinoy 1.2s steps(30) infinite;
+}
+
+.propellor_right .anim {
+    background: url(../images/illustrations/all.png) no-repeat -1493px 0!important;
+    -webkit-animation: propellor_right 2s linear infinite;
+    animation: propellor_right 2s linear infinite;
+    -webkit-transform-origin: 38px 42px;
+    transform-origin: 38px 42px;
+}

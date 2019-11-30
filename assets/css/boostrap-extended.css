@@ -16,8 +16,8 @@
 
 @media (min-width: 576px){
 .container-mild {
-    padding-right: 125px;
-    padding-left: 125px;
+    padding-right: 55px;
+    padding-left: 55px;
 }
 .container {
     max-width: initial;
