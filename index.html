@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
         <link rel="stylesheet" href="./assets/css/animate.css" />
         <link rel="stylesheet" href="./assets/css/anim.css" />
+        <link rel="stylesheet" href="./assets/css/font-awesome.css" />
         <script type="text/javascript" src="./assets/js/jquery.js"></script>
         <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
 
@@ -56,7 +57,7 @@
                 </div>
                 <!-- #End Navbar -->
 
-                <!-- Power -->
+                <!-- Hero -->
                 <div class="mt-5 intro">                    
                     <div class="row pt-5">
 
@@ -100,10 +101,10 @@
                     </div>
                         
                 </div>
-                <!-- #End Power -->
+                <!-- #End Hero -->
             </div>
 
-            <!-- Power Animation -->
+            <!-- Hero Animation -->
             <div class="container container-mild">
                 <div class="row">
 
@@ -132,7 +133,7 @@
 
                 </div>
             </div>
-            <!-- #End Power Animation -->
+            <!-- #End Hero Animation -->
                 
         </div>
 
@@ -142,7 +143,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="display-4 py-6 font-weight-bold">
-                            In Public Beta...
+                            In Public Beta:
                         </div>
                     </div>
                 </div>
@@ -185,18 +186,184 @@
             </div>
         </div>
         <!-- #End Info-->
+                
+        <!-- Wallet Animation -->
+        <div class="container container-mild" style="position: relative;">
+            <div class="row">
 
-        
-        <!-- How it works -->
-        <div class="vh-full">
-            <div class="container container-mild">
-                <div class="row">
-                    <div>
-                        sup.. pic goes here
+                <div style="position: absolute; bottom: -200; right: 80;">
+                    <div style="display: inline-table; position: relative;">
+                        <img class="animated anim" src="assets/img/Asset 10.png" style="margin-top: -80px;"/>
+                        <div id="animate-circle" class="animated delay-1s" style="position: absolute; right: -50px; opacity: 0">
+                            <img src="assets/img/5.png" />
+                        </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-6 col-sm-12 offset-sm-0">
+                    
+                </div>
+
+                <div id="parallax-trigger">
+                    <!-- <div id="parallaxText" style="position: relative;">
+                        <h1 class="layer1" style="left: 300px; visibility: inherit; opacity: 0.7; transform: matrix(3, 0, 0, 3, 0, 0);">PARALLAX</h1>
+                        <h1 class="layer2" style="left: 150px; visibility: inherit; opacity: 0.3; transform: matrix(2, 0, 0, 2, 0, 0);">PARALLAX</h1>
+                        <h1 class="layer3"> PARALLAX</h1>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- #End Wallet Animation -->
+
+        <!-- How it works -->
+        <div class="vh-full primary-background wallet  py-6">
+            <div class="container container-mild py-6">
+                <div class="row pt-3">
+                    <div class="col-sm-5 offset-1">
+                        <div class="center">
+                            <!-- <div class="card">
+                                <div class="card-header">
+                                    <div class="flex-inline">
+                                        <div>BobNzelu</div>
+                                        <div class="pull-right text-vly-primary font-weight-bold">N88,000.00</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">VendMe<sup>TM</sup></h5>
+                                    <p class="card-text">Easily request money from anyone on your social list with a few clicks.</p>
+                                    <a href="#" class="card-link">Read more</a>
+                                </div>
+                            </div> -->
+                            <div class="card mb-3" style="max-width: 25rem; font-size: 1.0rem;">
+                                <div class="card-header secondary-background">
+                                    <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-6"><div class="text-vly-mild font-weight-bold">BobNzelu</div></div>                                        
+                                        <div class="col-sm-5"><div class="pull-right text-right text-vly-primary font-weight-bold">N88,000.00</div></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">                                
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <ul class="nav nav-pills mt-3 mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-overview-tab" data-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="true">Overview</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-wallet-tab" data-toggle="pill" href="#pills-wallet" role="tab" aria-controls="pills-wallet" aria-selected="false">Wallet</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-notification-tab" data-toggle="pill" href="#pills-notification" role="tab" aria-controls="pills-notification" aria-selected="false">Notification</a>
+                                                </li>
+                                                <li>
+                                                    <div class="pull-right" style="display: inline-block; width: 1.5em; margin-top: 10px">
+                                                        <svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'>
+                                                            <path stroke='#61e6cd' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/>
+                                                        </svg>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                                                    <div>
+                                                        <h1 class="pt-5 pb-4 ml-3 text-vly-light" style="font-size: 4.0rem;">Overview</h1>
+                                                        <div class="ml-4">
+                                                            <!--Some text-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade show active" id="pills-wallet" role="tabpanel" aria-labelledby="pills-wallet-tab">
+                                                    <div>
+                                                        <h1 class="pt-5 pb-4 ml-3 text-vly-light" style="font-size: 4.0rem;">Wallet</h1>
+                                                        <div class="ml-4">
+                                                            <div class="accordion" id="accordionWallet">                                                            
+                                                                <div class="card">
+                                                                    <div class="card-header" id="fund-heading">
+                                                                        <h2 class="mb-0">
+                                                                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#fund" aria-expanded="true" aria-controls="fund">
+                                                                            Fund Wallet <span class="fa fa-angle-down fa-2x pull-right text-vly-mild"></span>
+                                                                            </button>
+                                                                        </h2>
+                                                                    </div>                                                                  
+                                                                    <div id="fund" class="collapse " aria-labelledby="fund-heading" data-parent="#accordionWallet">
+                                                                        <div class="card-body text-justify">
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="card">
+                                                                    <div class="card-header" id="cards-heading">
+                                                                        <h2 class="mb-0">
+                                                                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#cards" aria-expanded="true" aria-controls="cards">
+                                                                            View Cards <span class="fa fa-angle-down fa-2x pull-right text-vly-mild"></span>
+                                                                            </button>
+                                                                        </h2>
+                                                                    </div>                                                                  
+                                                                    <div id="cards" class="collapse" aria-labelledby="cards-heading" data-parent="#accordionWallet">
+                                                                        <div class="card-body text-justify">
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card">
+                                                                    <div class="card-header" id="spend-heading">
+                                                                        <h2 class="mb-0">
+                                                                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#spend" aria-expanded="true" aria-controls="spend">
+                                                                            Spend <span class="fa fa-angle-down fa-2x pull-right text-vly-mild"></span>
+                                                                            </button>
+                                                                        </h2>
+                                                                    </div>                                                                  
+                                                                    <div id="spend" class="collapse" aria-labelledby="spend-heading" data-parent="#accordionWallet">
+                                                                        <div class="card-body text-justify">
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="card">
+                                                                    <div class="card-header" id="history-heading">
+                                                                        <h2 class="mb-0">
+                                                                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#history" aria-expanded="true" aria-controls="history">
+                                                                            Transaction History <span class="fa fa-angle-down fa-2x pull-right text-vly-mild"></span>
+                                                                            </button>
+                                                                        </h2>
+                                                                    </div>                                                                  
+                                                                    <div id="history" class="collapse" aria-labelledby="history-heading" data-parent="#accordionWallet">
+                                                                        <div class="card-body text-justify">
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <div class="py-5">
+                                                                    <a href="/" class="btn btn-danger btn-lg font-weight-bold btn-block">Create Vend</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-notification" role="tabpanel" aria-labelledby="pills-notification-tab">
+                                                    <div>
+                                                        <h1 class="pt-5 pb-4 ml-3 text-vly-light" style="font-size: 4.0rem;">Notifications</h1>
+                                                        <div class="ml-4">
+                                                            <!--Some text-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
                         <div class="row">
-                            <div class="col-sm-7 offset-2">
+                            <div class="col-sm-7 offset-1 pt-5">
                                 <div class="display-4 pt-6 pb-4 font-weight-bold">
                                     How does this work?
                                 </div>
@@ -237,6 +404,209 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <div class="list-group-item list-group-item-action mx-1 my-2">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <span>&nbsp;</span>
+                                        </div>
+                                        <div class="col-sm-11">
+                                            <button type="button" class="btn btn-danger btn-lg rounded font-weight-bold px-5 my-2 my-sm-0">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #End -How it works -->    
+        <div style="position: absolute;">
+            <div class="border-triange">
+            </div>
+            <div style="top: -200px; left: 50px; position: absolute;">
+                <img src="assets/img/Asset 17.png" />
+            </div>
+        </div>
+
+        <!-- Online -->
+        <div class="vh-full white-background pt-6 online">
+            <div class="container container-mild py-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="display-4 py-6 font-weight-bold">
+                            <div class="pl-5">
+                                Achieve More <br>Online
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-1">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-giveaway-tab" data-toggle="pill" href="#v-pills-giveaway" role="tab" aria-controls="v-pills-giveaway" aria-selected="true">Do Giveaways</a>
+                        <a class="nav-link" id="v-pills-earn-tab" data-toggle="pill" href="#v-pills-earn" role="tab" aria-controls="v-pills-earn" aria-selected="false">Earn</a>
+                        <a class="nav-link" id="v-pills-send-tab" data-toggle="pill" href="#v-pills-send" role="tab" aria-controls="v-pills-send" aria-selected="false">Send Money</a>
+                        <a class="nav-link" id="v-pills-bills-tab" data-toggle="pill" href="#v-pills-bills" role="tab" aria-controls="v-pills-bills" aria-selected="false">Pay Bills</a>
+                        <a class="nav-link" id="v-pills-csoon-tab" data-toggle="pill" href="#v-pills-csoon" role="tab" aria-controls="v-csoon-settings" aria-selected="false">Coming Soon</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-giveaway" role="tabpanel" aria-labelledby="v-pills-giveaway-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="card-title font-weight-bold text-vly-mild">Giveaways</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    Do giveaways on social media (Excite your followers with intelligent...) and engage more efficiently. Should advertise the free things that users can enjoy
+                                    (unlimited vends and SuperVends, max 2-stage interactive words, 50mb cloud storage, etc).
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="text-vly-danger font-weight-bold">Create an Account --></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-earn" role="tabpanel" aria-labelledby="v-pills-earn-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="card-title font-weight-bold text-vly-mild">Earns</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    Do giveaways on social media (Excite your followers with intelligent...) and engage more efficiently. Should advertise the free things that users can enjoy
+                                    (unlimited vends and SuperVends, max 2-stage interactive words, 50mb cloud storage, etc).
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="text-vly-danger font-weight-bold">Create an Account --></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-send" role="tabpanel" aria-labelledby="v-pills-send-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="card-title font-weight-bold text-vly-mild">Send Money</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    Do giveaways on social media (Excite your followers with intelligent...) and engage more efficiently. Should advertise the free things that users can enjoy
+                                    (unlimited vends and SuperVends, max 2-stage interactive words, 50mb cloud storage, etc).
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="text-vly-danger font-weight-bold">Create an Account --></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-bills" role="tabpanel" aria-labelledby="v-pills-bills-tab">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="card-title font-weight-bold text-vly-mild">Pay Bills</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    Do giveaways on social media (Excite your followers with intelligent...) and engage more efficiently. Should advertise the free things that users can enjoy
+                                    (unlimited vends and SuperVends, max 2-stage interactive words, 50mb cloud storage, etc).
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="text-vly-danger font-weight-bold">Create an Account --></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-csoon" role="tabpanel" aria-labelledby="v-pills-csoon-tab">                            
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="card-title font-weight-bold text-vly-mild">Coming Soon</h1>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #End online -->
+        
+        <!-- slide -->
+        <div class="dark-background pb-6">
+            <div class="container container-mild pb-6">
+                <div class="row">
+                    <div class="col-sm-12 py-6">
+                        <div class="py-6">
+                            <div style="right: 50px; position: absolute;">
+                                <img src="assets/img/Asset 16.png" style="position: relative;" />
+                                <img src="assets/img/Asset 13.png" style="top: -60px; position: relative;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+        <!-- #End slide -->
+        
+        <!-- Core Pillars -->
+        <div class="vh-full mild-background pt-6 pillars">
+            <div class="container container-mild py-6">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="display-4 py-6 font-weight-bold">
+                            Core Pillars of <br> Vendly
+                        </div>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="">
+                            <div class="list-group my-3">
+                                <div class="list-group-item list-group-item-action mx-1 my-2">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <span>01</span>
+                                        </div>
+                                        <div class="col-sm-11">
+                                            <h5 class="pb-2 font-weight-bold title text-vly-mild">Monetize Social Interactivity</h5>
+                                            <p class="pb-1">The platform promises to enable its users turn their social currency into real one in a fun and secure way </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action mx-1 my-2">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <span>02</span>
+                                        </div>
+                                        <div class="col-sm-11">
+                                            <h5 class="pb-2 font-weight-bold title text-vly-mild">Democratize Value Exchange</h5>
+                                            <p class="pb-1">The platform promises to enable its users turn their social currency into real one in a fun and secure way </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action mx-1 my-2">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <span>03</span>
+                                        </div>
+                                        <div class="col-sm-11">
+                                            <h5 class="pb-2 font-weight-bold title text-vly-mild">Exciting Payment Options</h5>
+                                            <p class="pb-1">The platform promises to enable its users turn their social currency into real one in a fun and secure way </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item list-group-item-action mx-1 my-2">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <span>*</span>
+                                        </div>
+                                        <div class="col-sm-11">
+                                            <h5 class="pb-2 font-weight-bold title text-vly-mild">Security: Data Privacy and Funds</h5>
+                                            <p class="pb-1">The platform promises to enable its users turn their social currency into real one in a fun and secure way <a href="#">Learn More</a></p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="list-group-item list-group-item-action mx-1 my-2">
                                     <div class="row">
                                         <div class="col-sm-1">
@@ -250,11 +620,72 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-sm-6">
+                        <div class="">
+                            <img src="assets/img/yoga.png"/>
+                        </div>                        
+                    </div>
+                </div>  
+            </div> 
         </div>
-        <!-- #End -How it works -->
+        <!-- #End core pillars -->
 
+        <!-- newsletter -->
+        <div class="vh-full dark-background py-5 newsletter">
+            <div class="container container-mild py-5">
+                <div class="row">
+                    <div class="col-sm-12 m-5">
+                        <div class="card secondary-background p-5 m-5">
+                            <div class="card-body p-5">
+                                <div class="text-vly-primary px-5">
+                                    <h2 class="py-4 px-5" style="font-size: 2.3rem;">
+                                        We are building Africa's largest tech-driven financial ecosystem based off of social interactivity because we believe social currency is the new wealth. <span>Join the evolution</span>
+                                    </h2>
+                                    <div class="py-4 px-5">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Input eMail address" aria-label="vend">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-danger px-5" type="button">Stay Updated</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-5 pb-4 px-5">
+                                        <h2 class="" style="font-size: 2.3rem;">
+                                        Endfully yours,
+                                        <div class="font-weight-bold">The Vendly Team</div>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+        <!-- #End newsletter -->
+        
+        <!-- footer -->
+        <div class="secondary-background py-5 footer">
+            <div class="container container-mild py-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li><a href="#">Imprint</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Charity</a></li>
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+        <!-- #End footer -->
         
         <script>
             //--- animate power image contents

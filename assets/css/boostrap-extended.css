@@ -97,8 +97,20 @@
     color: #336666 !important;
 }
 
+.text-vly-light {
+    color: #b3f1ec !important;
+}
+
+.text-vly-mild {
+    color: #00d0be !important;
+}
+
 .text-vly-secondary {
     color: #ffff00 !important;
+}
+
+.text-vly-danger {
+    color: #d00012;
 }
 
 .btn-outline-success-vly {
@@ -126,6 +138,10 @@
 
 .nav-link:hover {
     color: #336666 !important;
+}
+
+button.rounded {
+    border-radius: 0.7rem !important;
 }
 
 

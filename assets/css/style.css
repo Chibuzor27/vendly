@@ -5,6 +5,11 @@
     src: url("../fonts/Indian Type Foundry - Matteo.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Matteo Bold";
+    src: url("../fonts/Indian Type Foundry - Matteo Bold.otf") format("opentype");
+}
+
 body {
     font-family: "Matteo";
     font-size: 1.5rem;
@@ -30,6 +35,25 @@ a:disabled {
     color: #00332a;
 }
 
+.dark-background {
+    background-color: #336666;
+    color: #fff;
+}
+
+.white-background {
+    background-color: #fff;
+    color: #00332a;
+}
+
+.mild-background {
+    background-color: #b3f1ec;
+    color: #00332a;
+}
+
+.font-weight-bold {
+    font-family: "Matteo Bold";
+}
+
 .vh-full{
     min-height: 100vh;
 }
@@ -38,7 +62,8 @@ a:disabled {
 /**
 ***Landing Page Specific 
 **/
-.hm .intro .input-group > .form-control {
+.hm .intro .input-group > .form-control,
+.hm .newsletter .input-group > .form-control {
     padding: 25px 35px;
     font-size: 1.2rem;
     color: #04b1a4;
@@ -85,8 +110,28 @@ a:disabled {
     padding-top: 1.4rem;
 }
 
+
+
+
+
+
+.hm .wallet .card {
+    color: initial;
+}
+
+
+.hm .wallet .card .card-header {
+    background-color: #e0faf8;
+    border-bottom: 1px solid #e0faf8;
+}
+
+
+
+
+
 .hm .list-group-item {
     border: transparent;
+    background-color: transparent;
 }
 
 .hm .list-group-item:hover {
@@ -95,4 +140,97 @@ a:disabled {
 
 .hm .list-group-item .title {
     font-size: 1.6rem;
+}
+
+
+
+.hm .wallet .nav-pills .nav-link {
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+
+.hm .wallet .nav-pills .nav-link, 
+.hm .wallet .nav-pills .show > .nav-link {
+    color: #336666;
+    background-color: #ffffff;
+    font-weight: 800;
+}
+
+.hm .wallet .nav-pills .nav-link.active {
+    border-radius: 0;
+    border-bottom: 3px solid #61e6cd;
+}
+
+.hm .wallet .accordion .card {
+    border: 0;
+}
+
+.hm .wallet .accordion .card .btn:focus, 
+.hm .wallet .accordion .card .btn.focus {
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
+}
+
+.hm .wallet .accordion .card .card-header {
+    background-color: #fff;
+}
+
+.hm .wallet .accordion .card .card-header button {
+    font-weight: 800;
+    color: #336666;
+}
+
+.hm .wallet .accordion .card .card-header button span {
+    margin-top: -0.25em;
+}
+
+.hm .wallet .list-group-item {
+    color: #fff;
+    background-color: transparent;
+}
+
+.hm .border-triange {
+    background-color: #00d0be;
+    position: relative;
+    line-height: 0;
+}
+
+.hm .border-triange{
+    padding-top: 390px;
+}
+
+.hm .border-triange:before {
+    border-top: 900px solid transparent;
+    border-left: 99.1vw solid #fff;
+    content: ' ';
+}
+
+
+.hm .online .nav-pills .nav-link, 
+.hm .online .nav-pills .show > .nav-link {
+    color: #336666;
+    background-color: #ffffff;
+    /* font-weight: 800; */
+}
+
+.hm .online .nav-pills .nav-link:hover, 
+.hm .online .nav-pills .show > .nav-link:hover {
+    font-weight: 800;
+}
+
+.hm .online .nav-pills .nav-link.active {
+    color: #00d0be !important;
+    font-weight: 800;
+}
+
+.hm .footer ul li {
+    display: block;
+    margin: 8px auto;
+}
+
+.hm .footer ul li a {
+    color: #336666;
 }
