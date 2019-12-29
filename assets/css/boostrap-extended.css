@@ -26,8 +26,8 @@
 
 @media (min-width: 1200px){
 .container-mild {
-    padding-right: 125px;
-    padding-left: 125px;
+    padding-right: 100px;
+    padding-left: 100px;
     max-width: initial;
 }
 }
@@ -40,15 +40,27 @@
 }
 
 .display-5 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     font-weight: 300;
     line-height: 1.2;
 }
 
 .display-6 {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     font-weight: 300;
     line-height: 1.2;
+}
+
+.display-7 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.display-8 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 .p-6 {
@@ -113,8 +125,13 @@
     color: #d00012;
 }
 
+.btn {
+    border: 1.2px solid transparent;
+    border-radius: 0.5rem;
+}
+
 .btn-outline-success-vly {
-    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-outline-success-vly:hover {
@@ -151,12 +168,41 @@ button.rounded {
 .col-lg-0 {
     opacity: 0;
 }
+
+.col-sm-show {
+    display: block;
 }
+
+.col-sm-hide {
+    display: none;
+}
+}
+
 
 @media (min-width: 576px){
 .col-sm-0,
 .col-md-0,
 .col-lg-0 {
     opacity: 1;
+}
+
+.col-sm-show {
+    display: block;
+}
+
+.col-sm-hide {
+    display: none;
+}
+}
+
+
+@media (min-width: 1200px){    
+
+.col-sm-show {
+    display: none;
+}
+
+.col-sm-hide {
+    display: block;
 }
 }
